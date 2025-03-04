@@ -99,9 +99,9 @@ const EisenhowerMatrix: React.FC<EisenhowerMatrixProps> = ({
   
   return (
     <div className="max-w-5xl mx-auto">
-      <h2 className={`text-xl font-light ${
-        darkMode ? 'text-white' : 'text-gray-800'
-      } mb-6 transition-colors duration-200`}>
+      <h2 className={`text-xl font-bold ${
+        darkMode ? 'text-white' : 'text-emerald-950'
+      } mb-2 transition-colors duration-200`}>
         Eisenhower Matrix
       </h2>
       <p className={`text-m font-light ${
