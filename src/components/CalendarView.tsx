@@ -86,9 +86,9 @@ const CalendarView: React.FC<CalendarViewProps> = ({
   ];
   
   const handleMonthSelect = (monthIndex: number) => {
-    const newDate = new Date(currentDate);
+    const newDate = new Date(currentMonth);
     newDate.setMonth(monthIndex);
-    setCurrentDate(newDate);
+    setCurrentMonth(newDate);
     setShowMonthSelector(false);
   };
   
@@ -330,8 +330,8 @@ const CalendarView: React.FC<CalendarViewProps> = ({
     <div className="max-w-4xl mx-auto">
       <div className="flex items-center justify-between mb-8">
         <div className="flex flex-col relative">
-          <span className={`text-sm font-medium ${
-            darkMode ? 'text-gray-400' : 'text-gray-500'
+          <span className={`text-m font-medium ${
+            darkMode ? 'text-white' : 'text-gray-800'
           }`}>
             {year}
           </span>
@@ -344,11 +344,11 @@ const CalendarView: React.FC<CalendarViewProps> = ({
               className="ml-2 flex items-center focus:outline-none"
               aria-label="Select month"
             >
-              <Calendar size={18} className={`${
-                darkMode ? 'text-indigo-300' : 'text-indigo-500'
-              }`} />
+              <Calendar size={22} className={`${
+                darkMode ? 'text-white' : 'text-gray-800'
+              }transition-colors duration-100 flex items-center`} />
               <ChevronDown size={14} className={`ml-1 ${
-                darkMode ? 'text-indigo-300' : 'text-indigo-500'
+                darkMode ? 'text-white' : 'text-gray-800'
               } transition-transform duration-200 ${showMonthSelector ? 'rotate-180' : ''}`} />
             </button>
           </h2>

@@ -100,12 +100,12 @@ const EisenhowerMatrix: React.FC<EisenhowerMatrixProps> = ({
   return (
     <div className="max-w-5xl mx-auto">
       <h2 className={`text-xl font-medium ${
-        darkMode ? 'text-white' : 'text-gray-800'
+        darkMode ? 'text-grey-800' : 'text-gray-800'
       } mb-6 transition-colors duration-200`}>
         Eisenhower Matrix
       </h2>
       <p className={`${
-        darkMode ? 'text-gray-200' : 'text-gray-700'
+        darkMode ? 'text-blue-900' : 'text-white-600'
       } mb-8 transition-colors duration-200`}>
         Drag and drop tasks between quadrants to prioritize your work effectively.
       </p>
